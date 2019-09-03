@@ -1,0 +1,27 @@
+{
+  "name": "canteen-order",
+  "version": "1.0.0",
+  "description": "Website where students order food from the canteen",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadsden-design-thinking-team-2019/Canteen-Order.git"
+  },
+  "author": "MS Gadsden Design Thinking Team 2019",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gadsden-design-thinking-team-2019/Canteen-Order/issues"
+  },
+  "homepage": "https://github.com/gadsden-design-thinking-team-2019/Canteen-Order#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "nodemon": "^1.19.1",
+    "pug": "^2.0.4",
+    "request": "^2.88.0"
+  }
+}
