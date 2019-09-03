@@ -5,6 +5,7 @@
 const express = require('express');
 const app = express();
 app.set('view engine', 'pug');
+var path = require('path');
 
 //Log the port to the console
 const server = app.listen(7000, () => {
@@ -21,7 +22,15 @@ const server = app.listen(7000, () => {
 //     });
 // });
 
-//Load the webpage
+//Load the webpages
 app.get('/', function (req, res) {
-    res.render('index');
+    res.sendFile(path.join(__dirname + '/views/' + 'about.html'));
+})
+
+app.get('/menu', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/' + 'menu.html'));
+})
+
+app.get('/contact', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/' + 'contact.html'));
 })
