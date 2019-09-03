@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));   //Set the /images folder to be
 //console.log(`Made Directory: ${__dirname}\\images`);
 
 //Log the port to the console
-const server = app.listen(12983, () => {
+const server = app.listen(12984, () => {
     console.log(`Express running → PORT ${server.address().port}`);
 });
 
@@ -25,6 +25,14 @@ app.get('/about', function (req, res) {
 
 app.get('/menu', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/' + 'menu.html'));
+})
+
+app.get('/menulistsnacks', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/' + 'menuchecklistsnacks.html'));
+})
+
+app.get('/menulistdrinks', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/' + 'menuchecklistdrinks.html'));
 })
 
 app.get('/contact', function (req, res) {
