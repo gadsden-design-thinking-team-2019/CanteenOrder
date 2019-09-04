@@ -38,3 +38,7 @@ app.get('/menulistdrinks', function (req, res) {
 app.get('/contact', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/' + 'contact.html'));
 })
+
+app.get('/staff', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/' + 'staff-view.html'));
+})
