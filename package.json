@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/gadsden-design-thinking-team-2019/Canteen-Order#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongodb": "^3.3.2",
     "pug": "^2.0.4",
     "request": "^2.88.0"
